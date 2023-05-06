@@ -2,22 +2,22 @@
 This tutorial covers how to create a basic rating system from a "dummy" dataset found on TensorFlow
 
 Software Documentation
-Introduction
+# Introduction
 This software is a movie recommendation system built using TensorFlow, TensorFlow Datasets, and TensorFlow Recommenders (TFRS) libraries. It uses the MovieLens dataset, which contains information about movie ratings and features, to train a model that recommends movies to users based on their preferences.
 
-Libraries
+# Libraries
 The software uses the following libraries:
 
 TensorFlow: an open-source machine learning library.
 TensorFlow Datasets: a library of ready-to-use datasets for TensorFlow.
 TensorFlow Recommenders (TFRS): a library for building recommender systems with TensorFlow.
-Data
+# Data
 The software loads the MovieLens dataset, which contains two splits: "train" and "test". The "train" split is used to train the model, and the "test" split is used to evaluate its performance. The dataset contains information about movie ratings and features, such as movie titles and user IDs.
 
 Models
 The software defines a TFRS model called MovieLensModel. This model uses two sub-models, one for user embeddings and one for movie embeddings, which are used to represent users and movies as vectors in a high-dimensional space. The MovieLensModel also defines a retrieval task, which is used to retrieve the top-k most relevant movies for a given user.
 
-Workflow
+# Workflow
 The software follows the following workflow:
 
 Load the MovieLens dataset.
@@ -27,7 +27,7 @@ Compile the model using the Adagrad optimizer.
 Train the model using the "train" split of the dataset.
 Index the movie embeddings using a brute-force indexing approach.
 Get recommendations for a given user by querying the index with the user embeddings.
-Example
+# Example
 The following is an example of how to use the software to get movie recommendations for a given user:
 
 python
